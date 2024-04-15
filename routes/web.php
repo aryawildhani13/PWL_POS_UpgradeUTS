@@ -24,13 +24,13 @@ Route::get('/logout', [AuthController::class, 'logout'])->name('signIn.logout');
 Route::get('/signUp', [AuthController::class, 'signUp'])->name('signUp.index');
 Route::post('/signUp', [AuthController::class, 'storeMember'])->name('signUp.storeMember');
 
-Route::get('/adminlte', function () {
-    return view('welcome_admin_lte');
-});
+// Route::get('/adminlte', function () {
+//     return view('welcome_admin_lte');
+// });
 
-Route::get('/template', function () {
-    return view('layouts.template');
-});
+// Route::get('/template', function () {
+//     return view('layouts.template');
+// });
 
 Route::get('/chart-user', [HomeController::class, 'chartUser']);
 Route::get('/chart-stok', [HomeController::class, 'chartStok']);
